@@ -1,0 +1,314 @@
+@charset "UTF-8";
+/*body {
+    background-image: url(./mp-background-tile.jpg);
+    background-repeat: repeat-y;
+}*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p.intro {
+    margin: 16px 0;
+}
+
+/*div.episodes {
+    margin: 0 6px;
+}*/
+
+div.episodes table {
+    margin: auto;
+    border-spacing: 0;
+    border-color: #fed;
+    /*border: 1px thin #eeeeee;*/
+}
+
+div.episodes th, td {
+    padding: 1px 4px;
+    border-color: #fed;
+    /*border: 1px thin #eeeeee;*/
+}
+
+body.custom-background {
+  background-image: url("https://s0.wp.com/wp-content/themes/pub/adventure-journal/images/mp-background-tile.jpg");
+  background-position: left top;
+  background-size: auto;
+  background-repeat: repeat;
+  background-attachment: scroll;
+}
+
+#container {
+    background: url(images/mp-background-shading.png) center top;
+    min-height: 100%;
+}
+
+#container2 {
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 980px;
+}
+
+#wrapper-top {
+    background: url(images/header-top.png) 5px top no-repeat;
+    height: 38px;
+    position: relative;
+}
+
+#page-curl {
+    background: url(images/header-top.png) right top no-repeat;
+    position: absolute;
+    right: 7px;
+    width: 25px;
+    height: 38px;
+    z-index: 100;
+}
+
+#wrapper-content {
+    background: url(images/mp-sprite-content-bg.png) 3px 0 repeat-y;
+    margin: auto;
+    margin-top: -476px;
+    padding-top: 476px;
+    width: 980px;
+}
+
+#header {
+    margin-bottom: 14px;
+    margin-top: -24px;
+    text-align: left;
+    position: relative;
+    z-index: 10;
+}
+
+#banner,
+#banner:after {
+    background: #f3f3f3;
+    border: 1px solid #d9d5d3;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    display: relative;
+    margin-left: 20px;
+    padding: 6px 6px 8px;
+    width: 920px;
+    z-index: 10;
+}
+
+#banner:after {
+    content: '';
+    height: 100px;
+    position: absolute;
+    bottom: -5px;
+    right: 40px;
+    -moz-transform: rotate(1.3deg);
+    -ms-transform: rotate(1.3deg);
+    -webkit-transform: rotate(1.3deg);
+    transform: rotate(1.3deg);
+    width: 700px;
+    z-index: -1;
+}
+
+#logo {
+    background: #fafafa;
+    background-image: -moz-linear-gradient(top, #e3ddd7, #fafafa); /* FF3.6 */
+    background-image: -ms-linear-gradient(top, #e3ddd7, #fafafa); /* IE10 */
+    background-image: -webkit-linear-gradient(top, #e3ddd7, #fafafa); /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image: linear-gradient(top, #e3ddd7, #fafafa);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorStr='#e3ddd7', EndColorStr='#fafafa'); /* IE6-IE9 */
+    border: 1px solid #d9d5d3;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4);
+    margin-right: 100px;
+    padding: 22px 45px;
+    position: absolute;
+    left: 34px;
+    top: -22px;
+    text-align: center;
+}
+
+#logo a,
+#logo a:visited {
+    color: #603913;
+    font-family: Vollkorn, Georgia, serif;
+    font-size: 32px;
+    letter-spacing: -1px;
+    line-height: 42px;
+    text-decoration: none;
+}
+
+#logo a:hover {
+    text-decoration: underline;
+}
+
+#content {
+    padding: 10px 25px;
+    position: relative;
+}
+
+#footer {
+    background: url(images/footer-background.jpg) center top;
+    border: 1px solid #666;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: rgb(102, 102, 102);
+    border-top: 1px solid #ddd;
+    box-shadow: 0 0 5px rgba(0,0,0,.8);
+    padding: 20px;
+}
+
+/*#wrapper-content {
+    margin-top: -483px;
+    padding-top: 485px;
+}*/
+
+/* Top Navigation Styling */
+#menu {
+    background: url(images/top-menu-left.png) no-repeat left bottom;
+    clear: both;
+    float: right;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+}
+
+#menu-wrap {
+    background: url(images/top-menu-background.png) 0 bottom repeat-x;
+    margin-left: 4px;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+#nav-right {
+    background: url(images/top-menu-right.png) 0 bottom repeat-y;
+    position: absolute;
+    right: -8px;
+    width: 8px;
+    height: 100%;
+}
+
+#menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 8px;
+}
+
+#menu ul li {
+    float: left;
+    list-style: none;
+    margin: 0;
+    position: relative;
+}
+
+#menu a {
+    color: #603913;
+    display: block;
+    font-weight: 700;
+    line-height: 15px;
+    padding: 13px 10px;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    color: #000;
+}
+
+#menu ul ul {
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    display: none;
+    float: left;
+    padding: 2px 0 0;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    z-index: 99999;
+}
+
+#menu ul ul ul {
+    left: 100%;
+    padding: 0;
+    top: 0;
+}
+
+#menu ul ul a {
+    background: #efe3d8;
+    line-height: 1em;
+    padding: .8em .8em .8em 1em;
+    width: 11em;
+    height: auto;
+}
+
+#menu li:hover > a {
+    background: #efe3d8;
+    background: rgba(255, 255, 255, .2);
+    color: #000;
+    text-decoration: underline;
+}
+
+#menu ul ul :hover > a,
+#menu ul ul a:hover {
+    background: #f2e8df;
+}
+
+#menu ul li:hover > ul {
+    display: block;
+}
+
+#menu .current-menu-item > a,
+#menu .current-menu-ancestor > a,
+#menu .current_page_item > a,
+#menu .current_page_ancestor > a {
+    background: rgba(255, 255, 255, .2);
+    color: #000;
+}
+
+#menu ul ul .current-menu-item a,
+#menu ul ul .current-menu-ancestor > a,
+#menu .children .current_page_item a,
+#menu .children .current_page_ancestor > a {
+    background: #f2e8df;
+}
+
+.panel {
+    padding: 0px;
+    margin: auto;
+    border-left: solid 1px #CCC;
+    border-right: solid 1px #999;
+    border-top: solid 1px #999;
+    border-bottom: solid 1px #CCC;
+    width: 800px;
+    text-align: center;
+}
+
+.panel summary {
+    font: bold 0.7em sans-serif;
+    background-color: #DDD;
+    border-bottom: solid 1px #CCC;
+    margin: 0px;
+    padding: 2px;
+    cursor: pointer; 
+    -moz-user-select: none;
+}
+
+.panel details:open > summary {
+    background-color: #EEE;
+}
+
+.panel summary:hover,
+.panel details:open > summary:hover {
+    background-color: #CCC;
+}
+
+.panel details:open > summary:focus {
+    background-color: #3399FF;
+}
+
+summary::marker {
+    content: "";
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+.panel details {
+    overflow: hidden; /* Keep this line to prevent an odd blue outline around the element in Safari. */
+}
