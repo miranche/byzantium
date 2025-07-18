@@ -70,8 +70,8 @@ body.custom-background {
 #wrapper-content {
     background: url(images/mp-sprite-content-bg.png) 3px 0 repeat-y;
     margin: auto;
-    margin-top: -476px;
-    padding-top: 476px;
+    margin-top: -483px;
+    padding-top: 485px;
     width: 980px;
 }
 
@@ -155,11 +155,6 @@ body.custom-background {
     box-shadow: 0 0 5px rgba(0,0,0,.8);
     padding: 20px;
 }
-
-/*#wrapper-content {
-    margin-top: -483px;
-    padding-top: 485px;
-}*/
 
 /* Top Navigation Styling */
 #menu {
