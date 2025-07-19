@@ -5,6 +5,13 @@
     padding: 0;
 }
 
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: normal;
+}
+
 p.intro {
     margin: 16px 0;
 }
@@ -40,7 +47,7 @@ body.custom-background {
 }
 
 #container2 {
-    padding-top: 20px;
+    padding-top: 24px;
     margin-left: auto;
     margin-right: auto;
     text-align: left;
@@ -118,6 +125,8 @@ body.custom-background {
     position: absolute;
     left: 34px;
     top: -22px;
+    font-size: 14px;
+    line-height: 1.625;
     text-align: center;
 }
 
@@ -269,7 +278,7 @@ body.custom-background {
 }
 
 .panel summary {
-    font: bold 0.7em sans-serif;
+    font: bold 0.8em sans-serif;
     background-color: #DDD;
     border-bottom: solid 1px #CCC;
     margin: 0px;
@@ -290,6 +299,10 @@ body.custom-background {
 
 .panel details:open > summary:focus {
     background-color: #3399FF;
+}
+
+.panel summary span {
+    line-height: 18px;
 }
 
 summary::marker {
