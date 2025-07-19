@@ -1,9 +1,4 @@
 @charset "UTF-8";
-/*body {
-    background-image: url(./mp-background-tile.jpg);
-    background-repeat: repeat-y;
-}*/
-
 
 * {
     margin: 0;
@@ -13,10 +8,6 @@
 p.intro {
     margin: 16px 0;
 }
-
-/*div.episodes {
-    margin: 0 6px;
-}*/
 
 div.episodes table {
     margin: auto;
@@ -29,6 +20,10 @@ div.episodes th, td {
     padding: 1px 4px;
     border-color: #fed;
     /*border: 1px thin #eeeeee;*/
+}
+
+div.episodes th {
+    text-align: center;
 }
 
 body.custom-background {
@@ -270,7 +265,7 @@ body.custom-background {
     border-top: solid 1px #999;
     border-bottom: solid 1px #CCC;
     width: 800px;
-    text-align: center;
+    text-align: left;
 }
 
 .panel summary {
@@ -279,7 +274,8 @@ body.custom-background {
     border-bottom: solid 1px #CCC;
     margin: 0px;
     padding: 2px;
-    cursor: pointer; 
+    text-align: center;
+    cursor: pointer;
     -moz-user-select: none;
 }
 
