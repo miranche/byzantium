@@ -1,2 +1,2 @@
 # byzantium
-The History of Byzantium Podcast index and untilities
+The History of Byzantium Podcast index and utilities
