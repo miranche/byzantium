@@ -5,7 +5,6 @@
     padding: 0;
 }
 
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
@@ -34,7 +33,7 @@ div.episodes th {
 }
 
 body.custom-background {
-  background-image: url("https://s0.wp.com/wp-content/themes/pub/adventure-journal/images/mp-background-tile.jpg");
+  background-image: url(images/mp-background-tile.jpg);
   background-position: left top;
   background-size: auto;
   background-repeat: repeat;
