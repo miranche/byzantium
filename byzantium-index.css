@@ -19,17 +19,16 @@ div.episodes table {
     margin: auto;
     border-spacing: 0;
     border-color: #fed;
-    /*border: 1px thin #eeeeee;*/
 }
 
 div.episodes th, td {
     padding: 1px 4px;
     border-color: #fed;
-    /*border: 1px thin #eeeeee;*/
 }
 
 div.episodes th {
     text-align: center;
+    white-space: nowrap;
 }
 
 body.custom-background {
