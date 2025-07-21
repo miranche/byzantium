@@ -17,6 +17,7 @@ import os.path
 import re
 from enum import Enum, auto
 from pyquery import PyQuery as pq
+from datetime import datetime
 
 
 ###  Three types of publication: announcement, regular podcast episode, special episode
@@ -260,6 +261,13 @@ class Publication:
                 # add table row to the century panel and to the list of all episodes
                 iDom('div.panel.century[data-century="%s"] table' % century).append(tr);
                 iDom('div.panel.all table').append(tr);
+
+        # the date as of which the index is current. the pub date if there is a next pub, today if not
+        if self.next:
+            curdate = self.D('meta[property="article:published_time"]').attr('content')[:10]
+        else:
+            curdate = datetime.today().strftime('%Y-%m-%d')
+        iDom('#state').attr('data-curr-index-date', curdate)
 
         # record that the index now reflects the current url
         iDom('#state').attr('data-curr-pub', self.url)

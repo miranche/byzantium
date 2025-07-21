@@ -7,10 +7,32 @@
 </head>
 
 <body class="custom-background">
-  <!-- user data holder -->
+<!--
+    The following <span> is read by the makeindex.py script and contains most of the info needed to
+    regenerate the index from scratch, or to update the existing index with new publications.
+-->
 <span hidden="" id="makeindex-data">
-  <span hidden="" id="state" data-first-pub="https://thehistoryofbyzantium.com/2012/05/09/hello-world/" data-curr-pub="https://thehistoryofbyzantium.com/2025/07/18/reddit-ama-live-now/" data-curr-century="14">
+<!--
+    The state of the index. The script updates this when the index is regenerated or updated.
+    data-first-pub    -- First publication. Start here to regenerate the index from scratch.
+                         Doesn't change.
+    data-curr-pub     -- Current publication. The latest pub included in the index.
+                         Start here to update existing index. If blank, generate from scratch.
+    data-curr-century -- Current century. The latest century panel used for regular episodes.
+                         Updated by the script as it moves through the centuries.
+			 Episodes that trigger the move to the new century panel are specified
+			 in the panel <div> for the century.
+   data-curr-index-date -- Date as of which the index is current. Only for info purposes.
+-->
+ <span hidden="" id="state" data-first-pub="https://thehistoryofbyzantium.com/2012/05/09/hello-world/" data-curr-pub="https://thehistoryofbyzantium.com/2025/07/18/reddit-ama-live-now/" data-curr-century="14" data-curr-index-date="2025-07-21">
   </span>
+<!--
+    The list of future publications to skip. Pruned by the script as they're encountered.
+    The criteria for inclusion are bit arbitrary. For example, tour and merch announcements are out,
+    but "you might like this" posts are in.
+    Add new lines to this list whenever a new publication appears on the podcast blog that shouldn't
+    be added to the index.
+-->
   <span hidden="" class="skip" data-url="">
   </span>
 </span>
@@ -34,10 +56,12 @@
     <!-- #header -->
     <div id="wrapper-content">
       <p align="center" class="intro">This is an episode index for Robin Pierson's fabulous <a href="http://thehistoryofbyzantium.com" target="_blank">The History of Byzantium podcast</a>.</p>
+      <!-- Special episode series panels -->
       <div id="panel_stories" class="panel special" data-series="stories">
 	<details>
 	  <summary><span>Byzantine Stories</span></summary>
 	  <div class="episodes">
+	    <!-- <p> makes for smoother open/close animation than setting margins for the table -->
             <p> </p>
             <table border="1">
               <tr>
@@ -104,6 +128,8 @@
 	  </div>
 	</details>
       </div>
+      <!-- Century panels. data-first-ep specifies the first episode included. The index moves to the
+	   next century panel when the current ep number is >= the first episode for the next century. -->
       <div id="panel_05" class="panel century" data-century="05" data-first-ep="1">
 	<details>
 	  <summary><span>5th century</span></summary>
@@ -675,6 +701,7 @@
 	  </div>
 	</details>
       </div>
+      <!-- All regular episodes and indexed announcements. Special episodes aren't added here. -->
       <div id="panel_all" class="panel all">
 	<details>
 	  <summary><span>Complete List</span></summary>
@@ -1060,7 +1087,7 @@
     <div id="footer" class="clearfix">
     </div>
   </div>
-  <!--        #container2 --> 
+  <!-- #container2 -->
 </div>
 <!-- #container -->
 <script src="./byzantium-index.js" type="text/javascript"></script>
