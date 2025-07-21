@@ -1,2 +1,4 @@
+Redirect 404 /.htaccess
 RedirectMatch 404 /\.git
 Redirect 404 /makeindex/
+RedirectMatch 404 /makeindex/.*
