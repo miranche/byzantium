@@ -1,7 +1,7 @@
 # byzantium
 [The History of Byzantium](https://thehistoryofbyzantium.com/) podcast [episode index](https://miranche.github.io/byzantium/episode-index.html) and utilities creating it.
 
-A revamp and an update of the [old episode index](http://www.sal.wisc.edu/~jwp/thob/thob-episode-index.html) compiled by listener JP ([Jeffrey W Percival](http://www.sal.wisc.edu/~jwp/) of the U Wisconsin Astronomy Department), stale since 2022. Shared here so anyone can take it over if I go off the radar.
+A revamp and an update of the [old episode index](http://www.sal.wisc.edu/~jwp/thob/thob-episode-index.html) compiled by listener JP ([Jeffrey W Percival](http://www.sal.wisc.edu/~jwp/) of the University of Wisconsin Astronomy Department), stale since 2022. Shared here so anyone can take it over if I go off the radar.
 
 The single non-UI piece of code here is the Python script [makeindex/makeindex.py](https://github.com/miranche/byzantium/blob/main/makeindex/makeindex.py) which scrapes the podcast website and generates the index. It works in tandem with an index template or a partly created index webpage. See copious comments in both Python and HTML about how it works. Other than that, the webpage got a facelift to be more in line with HTML5 web standards and to appear more uniformly across browsers.
 
